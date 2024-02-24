@@ -1,0 +1,22 @@
+//Insert one record
+
+INSERT INTO Customers VALUES (5, 'Yuvraj', 'Singh', 'yuvrajsingh@gmail.com', 8758974543);
+
+//Insert multiple record
+
+INSERT ALL 
+INTO Customers (CustomerId, FirstName, LastName, Email, PhoneNumber) VALUES (1, 'Rohit', 'Sharma', 'rohitsharma@gmail.com', 7890425035) 
+INTO Customers (CustomerId, FirstName, LastName, Email, PhoneNumber) VALUES (2, 'Virat', 'Kholi', 'viratkohli@gmail.com', 89450374356) 
+INTO Customers (CustomerId, FirstName, LastName, Email, PhoneNumber) VALUES (3, 'MS', 'Dhoni', 'msdhoni@gmail.com', 9023479533) 
+INTO Customers (CustomerId, FirstName, LastName, Email, PhoneNumber) VALUES (4, 'KL', 'Rahul', 'klrahul@gmail.com', 78934345956) 
+SELECT * FROM dual
+
+
+//Delete single row
+
+DELETE FROM Customers
+WHERE CustomerID = 1;
+
+// Delete table
+
+Drop table Orders;
